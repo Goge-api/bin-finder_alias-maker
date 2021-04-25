@@ -32,6 +32,43 @@ func FilePath() (path string) {
 	return
 }
 
+func printFileAt(comic string, count int) {
+	println(comic, count)
+
+}
+
+func matcher(base, fileToFind, path string) {
+
+	if base == fileToFind {
+		FileWritter(fileToFind, path)
+
+		fmt.Println("FOUND BITCOIN!")
+		fmt.Println("Wrote paths and alii to logs")
+		// return nil
+		os.Exit(0)
+	} else {
+		print("Files looked at that are not what the things we are looking for")
+	}
+}
+
+func WalkAndFind(rootPath string, fileToFind string) {
+	county := 0
+	go printFileAt("Starting file search file system", county)
+	root := rootPath
+	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
+		base := filepath.Base(path)
+		go matcher(base, fileToFind, path)
+		county++
+		go printFileAt("...", county)
+		return nil
+	})
+
+	if err != nil {
+		panic(err)
+	}
+
+}
+
 func IndexDirs(rootPath string) {
 
 	county := 0
@@ -42,34 +79,6 @@ func IndexDirs(rootPath string) {
 		county++
 		println("Files Indexed: ", county)
 		files = append(files, path)
-		return nil
-	})
-
-	if err != nil {
-		panic(err)
-	}
-
-}
-
-func WalkAndFind(rootPath string, thing string) {
-
-	county := 0
-	print("Starting file search file system")
-	root := rootPath
-	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
-		base := filepath.Base(path)
-		if base == thing {
-			fmt.Println("FOUND BITCOIN!")
-			FileWritter(thing, path)
-			// return nil
-			os.Exit(0)
-		} else {
-
-			county++
-			println("Files not what we are looking for...", county)
-			// files = append(files, path)
-		}
-
 		return nil
 	})
 
