@@ -6,20 +6,17 @@ import (
 	"os"
 )
 
-func FileWritter(s string) {
+func FileWritter(ff string, path string) {
 
-	f, err := os.Create("data.txt")
-
+	f, err := os.OpenFile("binsFound.log",
+		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
 	}
-
 	defer f.Close()
 
-	_, err2 := f.WriteString(s)
-
-	if err2 != nil {
-		log.Fatal(err2)
+	if _, err := f.WriteString(ff + "," + path + "\n"); err != nil {
+		log.Println(err)
 	}
 
 	fmt.Println("File Writter done")

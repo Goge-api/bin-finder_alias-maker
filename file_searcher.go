@@ -40,8 +40,36 @@ func IndexDirs(rootPath string) {
 	root := rootPath
 	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
 		county++
-		println("Files Indexed", county)
+		println("Files Indexed: ", county)
 		files = append(files, path)
+		return nil
+	})
+
+	if err != nil {
+		panic(err)
+	}
+
+}
+
+func WalkAndFind(rootPath string, thing string) {
+
+	county := 0
+	print("Starting file search file system")
+	root := rootPath
+	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
+		base := filepath.Base(path)
+		if base == thing {
+			fmt.Println("FOUND BITCOIN!")
+			FileWritter(thing, path)
+			// return nil
+			os.Exit(0)
+		} else {
+
+			county++
+			println("Files not what we are looking for...", county)
+			// files = append(files, path)
+		}
+
 		return nil
 	})
 
@@ -59,18 +87,20 @@ func SearchFor(fileSearchingFor string) {
 		if base == fileSearchingFor {
 			fmt.Println("FOUND BITCOIN!")
 			// Execute(fmt.Sprintf("echo Bitcoin bin found at %s", file))
-			FileWritter(file)
+			FileWritter(base, file)
 		}
 	}
 }
 
-func FileWalk(fileSearchingFor string) {
+func FileWalk(rootPath string, fileSearchingFor string) {
 	// var wg sync.WaitGroup
 
 	// TODO make gorouitine
+	go IndexDirs(rootPath)
 
 	// wg.Add(1)
 	// TODO make goroutine in finder await after slice is made
+	go SearchFor(fileSearchingFor)
 
 	// wg.Wait()
 
