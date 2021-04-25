@@ -6,7 +6,8 @@ import (
 
 func main() {
 
-	// Execute("bitcoind -server")
-	FileWalk("~")
-	fmt.Println("donezo")
+	IndexDirs(GetRoot())
+	SearchFor("bitcoin.exe")
+
+	fmt.Println("Main done running")
 }
