@@ -7,7 +7,7 @@ func main() {
 	// fmt.Scanln(&auto)
 	// if auto == "y" || auto == "Y" {
 	// WalkAndFind(GetRoot/(), "bitcoind.exe")
-	ExecuteAlias("benis")
+	ExecuteAlias(BinLogRead()[0].fullAlias)
 	// BinLogRead()
 
 	// } else {
