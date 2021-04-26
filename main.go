@@ -5,9 +5,11 @@ func main() {
 	// fmt.Println("Do you want to autorun the finder for bitcoin? [Y,y]")
 	// var auto string
 	// fmt.Scanln(&auto)
-	// if auto == "y" || auto == "Y" {
-	// WalkAndFind(GetRoot/(), "bitcoind.exe")
-	ExecuteAlias(BinLogRead()[0].fullAlias)
+	// // if auto == "y" || auto == "Y" {
+	// WalkAndFind(GetRoot(), "dogecoind")
+	// println("Finder Done")
+	// print(BinLogRead()[0].fullAlias)
+	Execute(BinLogRead()[0].path)
 	// BinLogRead()
 
 	// } else {
