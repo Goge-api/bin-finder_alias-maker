@@ -31,4 +31,4 @@ If you would like to join the project, or just meme on us, send an email at [gog
 
 - There will also be a CLI wrapper [(Future Link)](https://radroutes.com) That will wrap dogecoind, dogecoin-cli...etc, with goge commands.
  
-- work on the API has begun with the [Fiber framework](https://github.com/gofiber/fiber) to interact with the goge-wrapper.
+- Work on the API has begun with the [Fiber framework](https://github.com/gofiber/fiber) to interact with the goge-wrapper.

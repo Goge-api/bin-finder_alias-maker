@@ -1,6 +1,6 @@
-dogecoind,/System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/dogecoind,doged,doged='/System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/dogecoind'
-bitcoin-cli.exe, /System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/bitcoin-cli.exe,btcli, "btcli='/System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/bitcoin-cli.exe'"
-bitcoin-tx.exe, /System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/bitcoin-tx.exe,btctx, "btctx='/System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/bitcoin-tx.exe'"
-bitcoin-wallet.exe, /System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/bitcoin-wallet.exe,btcwall, "btcwall='/System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/bitcoin-wallet.exe'"
-bitcoin-qt.exe, /System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/bitcoin-qt.exe,btcqt, "btcqt='/System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/bitcoin-qt.exe'"
-test_bitcoin.exe, /System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/test_bitcoin.exe,tbtc, "tbtc='/System/Volumes/Data/Users/e/Desktop/code/go/goge-lib/bin/test_bitcoin.exe'"
+dogecoind, C:\Users\Beast\Desktop\code\Go\goge\bin\dogecoind,doged, doged='C:\Users\Beast\Desktop\code\Go\goge\bin\dogecoind'
+bitcoin-cli.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-cli.exe,btcli, btcli='C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-cli.exe'
+bitcoin-tx.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-tx.exe,btctx, btctx='C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-tx.exe'
+bitcoin-wallet.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-wallet.exe,btcwall, btcwall='C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-wallet.exe'
+bitcoin-qt.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-qt.exe,btcqt, btcqt='C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-qt.exe'
+test_bitcoin.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\test_bitcoin.exe,tbtc, tbtc='C:\Users\Beast\Desktop\code\Go\goge\bin\test_bitcoin.exe'
