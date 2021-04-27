@@ -1,3 +1,10 @@
+#!/bin/bash
+
 ./sys.exe
 
-./ali.exe
+cd ali
+
+py aliasmake.py
+
+
+
