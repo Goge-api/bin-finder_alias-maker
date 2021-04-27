@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 func PathMaker(ssp, s string) (pathSub string) {
@@ -25,7 +26,7 @@ func FileWritter(ff string, path string) {
 	runes := []rune(path)
 	subString := string(runes[0 : len(path)-len(filepath.Base(path))])
 
-	if _, err := f.WriteString("dogecoind" + ", " + PathMaker(subString, "dogecoind") + ",doged, " + AliasMaker(subString+"dogecoind", "doged") + "\n"); err != nil {
+	if _, err := f.WriteString("bitcoind.exe" + "," + PathMaker(subString, "bitcoind.exe") + ",btcd," + AliasMaker(subString+"bitcoind.exe", "btcd") + "\n"); err != nil {
 		log.Println(err)
 	}
 	if _, err := f.WriteString("bitcoin-cli.exe" + ", " + PathMaker(subString, "bitcoin-cli.exe") + ",btcli, " + AliasMaker(subString+"bitcoin-cli.exe", "btcli") + "\n"); err != nil {
@@ -73,4 +74,28 @@ func FileWritterAppend(ff string, path string) {
 	}
 
 	fmt.Println("File Writter done")
+}
+
+func AliasWritter(alias string) error {
+
+	dirname, err := os.UserHomeDir()
+
+	homeBashRc := filepath.Join(dirname, ".bashrc")
+
+	f, err := os.OpenFile(homeBashRc,
+		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+
+	if err != nil {
+		log.Println(err)
+	}
+
+	ali := strings.ReplaceAll(alias, `\`, "/")
+
+	alii := ali + "\n"
+
+	if _, err := f.WriteString("alias " + alii); err != nil {
+		log.Println(err)
+	}
+
+	return f.Close()
 }

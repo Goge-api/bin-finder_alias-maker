@@ -6,11 +6,11 @@ func main() {
 	// var auto string
 	// fmt.Scanln(&auto)
 	// // if auto == "y" || auto == "Y" {
-	WalkAndFind(GetRoot(), "dogecoind")
-	// println("Finder Done")
-	// print(BinLogRead()[0].fullAlias)
-	// Execute(BinLogRead()[0].path)
-	// BinLogRead()
+	// WalkAndFind(GetRoot(), "bitcoind.exe")
+	for i := 0; i < len(BinLogRead()); i++ {
+
+		AliasWritter(BinLogRead()[i].fullAlias)
+	}
 
 	// } else {
 

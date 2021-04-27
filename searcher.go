@@ -53,7 +53,6 @@ func matcher(base, fileToFind, path string) {
 
 func isFound() (err error) {
 	if btc_bin_found == true {
-		Execute(BinLogRead()[0].path)
 		SysBeep()
 		os.Exit(0)
 	}

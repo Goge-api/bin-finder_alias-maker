@@ -2,9 +2,7 @@
 
 ./sys.exe
 
-cd ali
-
-py aliasmake.py
+./ali.exe
 
 
 
