@@ -18,7 +18,7 @@ func ExecuteAlias(binAli string) (string, error) {
 	// print(binAli)
 	// var ali string = binAli
 	// print(ali)
-	cmd := execCommand("echo", "benis")
+	cmd := execCommand("echo", "goge")
 	out, err := cmd.CombinedOutput()
 	fmt.Printf(string(out))
 	return string(out), err

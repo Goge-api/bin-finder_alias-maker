@@ -3,4 +3,4 @@ bitcoin-cli.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-cli.exe,btcli, 
 bitcoin-tx.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-tx.exe,btctx, btctx='C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-tx.exe'
 bitcoin-wallet.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-wallet.exe,btcwall, btcwall='C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-wallet.exe'
 bitcoin-qt.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-qt.exe,btcqt, btcqt='C:\Users\Beast\Desktop\code\Go\goge\bin\bitcoin-qt.exe'
-test_bitcoin.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\test_bitcoin.exe,tbtc, tbtc='C:\Users\Beast\Desktop\code\Go\goge\bin\test_bitcoin.exe'.exe'
+test_bitcoin.exe, C:\Users\Beast\Desktop\code\Go\goge\bin\test_bitcoin.exe,tbtc, tbtc='C:\Users\Beast\Desktop\code\Go\goge\bin\test_bitcoin.exe'

@@ -25,16 +25,16 @@ func FilePath() (path string) {
 	return
 }
 
-func printFileAt(comic string, count int) {
+func printNoRegRet(comic string, count int) {
 	// println(comic, count)
 	fmt.Printf("\r%d"+comic, count)
 
 }
 
-func normPrint(str string) {
-	fmt.Printf("\r%d" + str)
+// func normPrint(str string) {
+// 	fmt.Printf("\r%d" + str)
 
-}
+// }
 
 func matcher(base, fileToFind, path string) {
 
@@ -51,7 +51,7 @@ func matcher(base, fileToFind, path string) {
 	}
 }
 
-func found() (err error) {
+func isFound() (err error) {
 	if btc_bin_found == true {
 		Execute(BinLogRead()[0].path)
 		SysBeep()
@@ -65,14 +65,14 @@ func found() (err error) {
 
 func WalkAndFind(rootPath string, fileToFind string) {
 	county := 0
-	go printFileAt("Starting file search file system", county)
+	go printNoRegRet("Starting file search file system", county)
 	root := rootPath
 	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
 		base := filepath.Base(path)
 		go matcher(base, fileToFind, path)
 		county++
-		go printFileAt("...Files looked at that were not the things we are looking for", county)
-		go found()
+		go printNoRegRet(" <=== This many files looked at that were not the things we are looking for.", county)
+		go isFound()
 		return nil
 	})
 
