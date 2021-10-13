@@ -26,6 +26,12 @@ Check the main() and params to make sure it is searching for what you want.
 
 If you would like to join the project, or just meme on us, send an email at [gogelib@gmail.com](gogelib@gmail.com)
 
+# Run
+There are Windows executables already built or you can run 
+```
+go build ./
+```
+to build the executable for your platform, and then run it on your system.
 # goge-lib-family
 
 - There will also be a CLI wrapper [(Future Link)](https://radroutes.com) That will wrap dogecoind, dogecoin-cli...etc, with goge commands.
