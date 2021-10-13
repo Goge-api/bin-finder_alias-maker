@@ -32,8 +32,8 @@ There are Windows executables already built or you can run
 go build ./
 ```
 to build the executable for your platform, and then run it on your system.
-# goge-lib-family
+<!-- # goge-lib-family
 
 - There will also be a CLI wrapper [(Future Link)](https://radroutes.com) That will wrap dogecoind, dogecoin-cli...etc, with goge commands.
  
-- Work on the API has begun with the [Fiber framework](https://github.com/gofiber/fiber) to interact with the goge-wrapper.
+- Work on the API has begun with the [Fiber framework](https://github.com/gofiber/fiber) to interact with the goge-wrapper. -->
