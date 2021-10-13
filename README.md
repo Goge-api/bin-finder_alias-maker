@@ -19,11 +19,10 @@ The bin-finder/alias creator has completed 65% of the intened core features.
 
 
 
-# Development progress
+# Installation
+If you would like to run the go files, you will need to have Golang installed, otherwise you can run the windows executable.
 
-Currently the entire goge-lib is in heavy and early delopment. 
-
-```The bin-finder/alias creator Is almost complete ```
+Check the main() and params to make sure it is searching for what you want.
 
 If you would like to join the project, or just meme on us, send an email at [gogelib@gmail.com](gogelib@gmail.com)
 
